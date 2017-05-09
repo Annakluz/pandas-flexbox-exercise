@@ -4,8 +4,10 @@ let extincion = document.getElementById("extincion");
 let extincionText = document.getElementById("extitext");
 let origen = document.getElementById("origen");
 let origenText = document.getElementById("origentex");
-let close = document.getElementsByClassName("close");
-let pandaPicture =document.getElementsByClassName("pandapicture");
+let restaurar = document.getElementById("restaurar");
+
+
+let pandaPicture =document.getElementsByClassName("pandared");
 //Events
 
 extincion.addEventListener("click", hideExtincion);
@@ -32,3 +34,24 @@ function hideOrigen() {
     }
     }
 //This function closes the image
+
+function pandasClose() {
+   let close = document.getElementsByClassName("close");
+    [].forEach.call(close, function(elemento){
+        elemento.addEventListener("click", closeImg)
+    });
+}
+pandasClose();
+
+function closeImg(){
+    let imgPanda = this.parentElement;
+    imgPanda.style.display = "none";
+}
+
+function restart(){ 
+let close = document.getElementsByClassName("close");
+
+    for(let i = 0; i < close.length; i++){
+        close[i].parentElement.style.display = "flex";
+    }
+}
