@@ -1,3 +1,5 @@
+
+}
 .bigContainer{
     display: flex;
     flex-direction: column;    
@@ -5,7 +7,7 @@
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
 }
 
 nav {
@@ -30,6 +32,45 @@ a{
     color: #F2EEE3;
 }
 
+.containerImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+.picture {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: center;
+    width: 30%;
+    
+}
+
 img{
-    border-radius: 50%
+    border-radius: 50%;
+    width: 70%;
+    height: 70%;
+}
+
+.containerBtn {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 2%;
+    width: 80%;
+    margin-left:auto;
+    margin-right: auto;
+    
+}
+
+button{
+    font-family: 'Fredoka One', cursive;
+    padding: 1%;
+    border-radius: 40%;
+    background: #785E4D;
+}
+
+.containerText {
+    
 }
