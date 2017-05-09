@@ -1,0 +1,35 @@
+.bigContainer{
+    display: flex;
+    flex-direction: column;    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #FF8426;
+    }
+
+.links {
+    list-style: none;
+    width: 10%;
+    text-decoration: none;
+    margin: 2%;
+    
+}
+
+a{
+    font-family: 'Fredoka One', cursive;
+    text-decoration: none;
+    color: #F2EEE3;
+}
+
+img{
+    border-radius: 50%
+}
