@@ -5,14 +5,15 @@ let extincionText = document.getElementById("extitext");
 let origen = document.getElementById("origen");
 let origenText = document.getElementById("origentex");
 let restaurar = document.getElementById("restaurar");
-
-
-let pandaPicture =document.getElementsByClassName("pandared");
+let closer = document.getElementsByTagName("span");
+let pandaPicture =document.getElementsByClassName("picture");
 //Events
 
 extincion.addEventListener("click", hideExtincion);
 origen.addEventListener("click", hideOrigen);
-//close.addEventListener("click", closeImg);
+closer.addEventListener("click",closeImg);
+restaurar.addEventListener("click",restart);
+
 
 
 //These functions allow hiding and appearing texts
@@ -35,23 +36,10 @@ function hideOrigen() {
     }
 //This function closes the image
 
-function pandasClose() {
-   let close = document.getElementsByClassName("close");
-    [].forEach.call(close, function(elemento){
-        elemento.addEventListener("click", closeImg)
-    });
+for(i = 0; i < closer.length; i ++){
+    closer[i].addEventListener("click", closeImg);
 }
-pandasClose();
 
 function closeImg(){
-    let imgPanda = this.parentElement;
-    imgPanda.style.display = "none";
-}
-
-function restart(){ 
-let close = document.getElementsByClassName("close");
-
-    for(let i = 0; i < close.length; i++){
-        close[i].parentElement.style.display = "flex";
-    }
+    
 }
